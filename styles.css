@@ -1,0 +1,310 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        /*vertical-align: baseline;*/
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+        font-family: "微軟正黑體";
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        position: relative;
+    }
+    
+    .wrap {
+        margin: 0 auto;
+    }
+    
+    .header {
+        background: #eee;
+    }
+    
+    .menu {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .menu>li {
+        float: right;
+        margin: 5px 15px 5px 0;
+    }
+    
+    .menu>li>a {
+        text-decoration: none;
+    }
+    
+    .menu>li>a>img {
+        margin: 2px 2px -2px 0;
+    }
+    
+    .fb {
+        color: #000088;
+    }
+    
+    .twitter {
+        color: #00aaff;
+    }
+    
+    .bar {
+        clear: both;
+        background: #fff;
+        box-shadow: 0px 3px 2px 0px #ccc;
+    }
+    
+    .logo {
+        margin: 0 auto;
+        width: 1000px;
+        padding: 10px 0;
+    }
+    
+    .nav {
+        float: right;
+    }
+    
+    .nav>li {
+        float: left;
+        padding: 15px 15px 15px 15px;
+        color: #00cc99;
+    }
+    
+    .nav>li:hover {
+        border-bottom: 3px solid #00cc99;
+    }
+    
+    .nav>li:active {
+        border-bottom: 3px solid #00cc99;
+    }
+    
+    .nav>li>a {
+        color: #00cc99;
+        text-decoration: none;
+    }
+    
+    .active {
+        border-bottom: 3px solid #00cc99;
+    }
+    
+    .content {
+        max-width: 1000px;
+        margin: 0 auto;
+        clear: both;
+    }
+    
+    .box {
+        width: 31.3%;
+        float: left;
+        margin: 50px 1%;
+        box-shadow: 0px 3px 2px 0px #ccc;
+        border-radius: 5px;
+        padding: 25px;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 1.3em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    
+    .style {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .style>ul {
+        text-align: left;
+    }
+    
+    p {
+        text-align: justify;
+        text-justify: inter-ideograph;
+        letter-spacing: 1px;
+        font-size: 0.9em;
+    }
+    
+    @media(max-width:1000px) {
+        .menu,
+        .logo {
+            width: 100%;
+        }
+        .logoimg {
+            margin-left: 3%;
+        }
+        .imgrwd {
+            max-width: 100%;
+        }
+        .box {
+            padding: 20px;
+            height: 340px;
+        }
+    }
+    
+    @media(max-width:767px) {
+        .menu {
+            width: 100%;
+        }
+        .bar {
+            width: 100%;
+        }
+        .logo {
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
+        .nav {
+            float: none;
+        }
+        .nav>li:nth-child(1),
+        .nav>li:nth-child(2) {
+            margin-top: 12px;
+        }
+        .nav>li:nth-of-type(odd) {
+            border-right: 1px solid #eee;
+        }
+        .nav>li {
+            padding: 15px 0;
+            width: calc(100%/2 - 0.5px);
+            border-bottom: 3px solid #eee;
+        }
+        .nav>li.active {
+            border-bottom: 3px solid #00cc99;
+        }
+        .box {
+            width: 94%;
+            margin: 20px 3%;
+            height: 100%;
+        }
+    }
